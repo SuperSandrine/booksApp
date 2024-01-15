@@ -1,3 +1,4 @@
-/backend/node_modules #
-/books-app #
-/monbile-app/node_modules #
+
+books-app #
+mobile-app/node_modules #
+backend/node_modules #
