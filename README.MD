@@ -3,10 +3,8 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 <!-- [![Forks][forks-shield]][forks-url]
 [![MIT License][license-shield]][license-url] -->
-
 
 
 <!-- PROJECT LOGO -->
@@ -74,12 +72,43 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 
 ### Built With
+Mobile app front side:
 * [![Expo][Expo]][Expo-url]
 * [![React][React_Native]][React_Native-url]
 * [![ReactNavigation][React_Navigation]][React_Navigation-url]
+Back side:
 * [![Express][Express]][Express-url]
 * [![Firebase][Firebase]][Firebase-url]
 * [![Node.js][Node.js]][Node.js-url]
+
+### Structure
+
+```bash
+PROJECT-14-HRNet/
+|
+|-HRNet-Front-end/
+|  |- ...(package & config)
+|  |
+|  |- public/
+|  |   |-favicon.svg
+|  |
+|  |- src/
+|      |- layout/
+|      |- components/
+|      |      |-Component1
+|      |            |- Component1.jsx
+|      |            |- Sub-component1.jsx
+|      |            |- Sub-component1.2.jsx
+|      |            |- Sub-component1.data.jsx
+|      |- pages/
+|      |- utils/
+|      |- main.jsx
+|
+|-Lighthouse reports/
+|  |-report1.json
+|
+|-README.md 
+```
 
 
 
@@ -186,6 +215,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
