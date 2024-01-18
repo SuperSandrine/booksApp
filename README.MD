@@ -19,14 +19,14 @@
   <p align="center">
     This project is a mobile application developed using Firebase, Express, React Native and Expo. The application allows users to manage a collection of books.
     <br />
-    <a href="https://github.com/SuperSandrine/booksApp"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/SuperSandrine/booksApp"><strong>Explore the folders and files »</strong></a>
     <br />
-    <br />
+    <!-- <br />
     <a href="https://github.com/SuperSandrine/booksApp">View Demo !!! </a>
     ·
     <a href="https://github.com/SuperSandrine/booksApp/issues">Report Bug</a>
     ·
-    <a href="https://github.com/SuperSandrine/booksApp/issues">Request Feature</a>
+    <a href="https://github.com/SuperSandrine/booksApp/issues">Request Feature</a> -->
   </p>
 </div>
 
@@ -40,6 +40,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#structure">Structure</a></li>
       </ul>
     </li>
     <li>
@@ -49,12 +50,12 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <!-- <li><a href="#usage">Usage</a></li> -->
+    <!-- <li><a href="#roadmap">Roadmap</a></li> -->
+    <!-- <li><a href="#contributing">Contributing</a></li> -->
+    <!-- <li><a href="#license">License</a></li> -->
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
 </details>
 
@@ -84,28 +85,42 @@ Back side:
 ### Structure
 
 ```bash
-PROJECT-14-HRNet/
+booksApp/
 |
-|-HRNet-Front-end/
+|-assets/
+|
+|-backend/
 |  |- ...(package & config)
 |  |
-|  |- public/
+|  |-index.js
+|  |
+|  |-models/
+|  |   |-book.js
+|  |
+|  |-controllers/
+|  |   |-booksControllers.js
+|  |
+|  |-routes/
+|  |   |-booksRoutes.js
+|  
+|
+-mobile-app/
+|  |- ...(package & config)
+|  |
+|  |-App.js
+|  |
+|  |-assets/
 |  |   |-favicon.svg
 |  |
-|  |- src/
-|      |- layout/
-|      |- components/
-|      |      |-Component1
-|      |            |- Component1.jsx
-|      |            |- Sub-component1.jsx
-|      |            |- Sub-component1.2.jsx
-|      |            |- Sub-component1.data.jsx
-|      |- pages/
-|      |- utils/
-|      |- main.jsx
-|
-|-Lighthouse reports/
-|  |-report1.json
+|  |-src/
+|  |   |-screens/
+|  |   |    |-Screen1.js
+|  |   |    |-Screen2.js
+|  |   |    |-...
+|  |   |-service/
+|  |   |    |-apiService.js
+|  |   |-navigation/
+|  |   |    |-AppNavigator.js
 |
 |-README.md 
 ```
@@ -130,7 +145,7 @@ Before you begin, ensure you have met the following requirements:
 On computer:
 - [Node.js](https://nodejs.org/) : 17.9.1
 - [npm](https://www.npmjs.com/) : 8.11.0
-- An IDE clike VSCode might help
+- An IDE like VSCode might help
 
 On mobile device: 
 - [Expo_go](https://expo.dev/client)
@@ -201,21 +216,18 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 
 
 <!-- LICENSE -->
-## License
+<!-- ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ -->
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
+![author][MeBadge] </br>
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -224,14 +236,14 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+<!-- ## Acknowledgments
 
 * []()
 * []()
 * []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ -->
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -246,8 +258,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [issues-url]: https://github.com/SuperSandrine/booksApp/issues
 [license-shield]: https://img.shields.io/github/license/SuperSandrine/booksApp.svg?style=for-the-badge
 [license-url]: https://github.com/SuperSandrine/booksApp/blob/master/LICENSE.txt
-
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&logoColor=blue
 [linkedin-url]: https://www.linkedin.com/in/sandrine-mestas-gleizes/
 
 [product-screenshot]: images/screenshot.png
@@ -281,3 +292,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[MeBadge]: https://img.shields.io/badge/Author-Sandrine%20Mestas-blue?style=for-the-badge
