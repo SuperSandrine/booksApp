@@ -1,14 +1,10 @@
-// Exemple d'utilisation dans un composant React
-//Affiche la liste des livres obtenus à partir de l'API REST.
-//Utilise fetch ou une bibliothèque appropriée pour effectuer les appels API.
 
 import React, { useEffect, useCallback,useState, useReducer } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, TouchableOpacity } from 'react-native';
 import { apiService } from '../services/apiService.js';
 import { useFocusEffect } from '@react-navigation/native';
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { commonStyles } from '../styles/styles.js';
 
 const BooksListScreen = ({navigation}) => {
   const [books, setBooks] = useState([]);
@@ -24,7 +20,7 @@ const BooksListScreen = ({navigation}) => {
         setBooks(data); // Met à jour l'état avec les données obtenues de l'API
         //forceUpdate()
       } catch (error) {
-        console.error('Erreur lors de la récupération des livres:', error);
+        console.error('Error while trying to get books', error);
       }
     };
     useFocusEffect(
@@ -35,14 +31,17 @@ const BooksListScreen = ({navigation}) => {
     );
 
   return (
-    <View>
-      <Text>Liste des livres :</Text>
+    <View style={commonStyles.containerButtons}> 
       {books.length > 0 ? (
       books.map((book) => {
-        return (<Button key={book.id} title={book.title} onPress={() => navigation.navigate('Book-Details',{book})}
-        />)})
+        return (
+        <View key={book.id} style={commonStyles.containerButton}> 
+          <Button key={book.id} title={book.title} onPress={() => navigation.navigate('Book-Details',{book})}/>
+        </View>
+
+        )})
     ) : (
-      <Text>Aucun livre reçu</Text>
+      <Text>Waiting for books to be loaded</Text>
     )}
     </View>
   );

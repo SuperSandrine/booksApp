@@ -64,9 +64,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This project, named "Books App," is a mobile application developed using React Native and Expo. 
+The application allows users to manage a collection of books, including adding new books, viewing a list of existing books, updating book details, and deleting books. 
+The frontend is built with React Native, while the backend is implemented using Node.js and Firestore for data storage. 
+The project also includes navigation features for seamless user experience, and it is structured to follow best practices for React Native development.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,6 +84,9 @@ Back side:
 * [![Express][Express]][Express-url]
 * [![Firebase][Firebase]][Firebase-url]
 * [![Node.js][Node.js]][Node.js-url]
+
+<!-- To go further: https://rnfirebase.io/ 
+https://www.freecodecamp.org/news/how-to-use-the-firebase-database-in-react/ -->
 
 ### Structure
 
@@ -192,6 +198,7 @@ You can enjoy the app directly on your device !
 
 <!-- USAGE EXAMPLES -->
 <!-- ## Usage
+
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 

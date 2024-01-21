@@ -16,19 +16,33 @@ export const AppNavigator = ({navigation}) =>{
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen}/>
-        <Stack.Screen name="Books-List" component={BooksListScreen} options={({navigation}) => 
-          ({title: "Books list",
-          headerRight: () => (
-         <Button
-           title="home"
-           onPress={() => navigation.navigate('Home')}
-         />
-          )
-          })
-        } 
-       />
+      <Stack.Navigator 
+        screenOptions={{
+          headerStyle: {backgroundColor:'#FF3EC7'},
+          headerTintColor: '#fff',
+          headerTitleStyle: {fontWeight: 'bold'},
+        }}
+        initialRouteName="Home">
+        <Stack.Screen 
+          name="Home" 
+          component={HomeScreen}
+          options={{
+            title: "Welcome on booksApp",
+          }}
+        />
+        <Stack.Screen 
+          name="Books-List" 
+          component={BooksListScreen} 
+          options={({navigation}) => 
+            ({title: "Books list",
+            headerRight: () => (
+              <Button
+                title="home"
+                onPress={() => navigation.navigate('Home')}
+              />
+            )
+          })}
+        />
         <Stack.Screen name="Book-Details" component={BooksDetailsScreen} options={{title: "Book details"}}/>
         <Stack.Screen name="Add-Book" component={AddBookScreen} options={{
           title:"Add a new book to the list",
@@ -43,3 +57,4 @@ export const AppNavigator = ({navigation}) =>{
     </NavigationContainer>
   )
 }
+
