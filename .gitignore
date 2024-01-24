@@ -42,4 +42,4 @@ web-build/
 *.mobileprovision
 
 #key API
-backend/config/firebase-key.json
+firebase-key.json
