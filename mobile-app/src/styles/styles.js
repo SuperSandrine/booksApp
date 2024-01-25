@@ -4,10 +4,11 @@ import { StyleSheet } from 'react-native';
 
 export const commonStyles = StyleSheet.create({
   container: {
-    flex: 3,
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#FFA124', // primary color
+    padding:20
   },
   text: {
     color: '#310066',
@@ -33,6 +34,13 @@ export const commonStyles = StyleSheet.create({
   titleInfo:{
     fontSize:20,
   },
+  image:{
+    width:'20%',
+    resizeMode: 'contain',
+    paddingBottom: 1,
+    marginBottom: -300,
+    flex:3,
+  }
 
 });
 
@@ -50,11 +58,14 @@ export const addBookStyles = StyleSheet.create({
   // Styles spécifiques au composant AddBookScreen
   input: {
     height: 40,
-    borderColor: 'gray',
-    borderWidth: 1,
+    width: '100%',
+    borderColor: 'dodgerblue',
+    borderWidth: 2,
     marginBottom: 15,
     paddingHorizontal: 10,
-    backgroundColor: '#ffffff',
+    backgroundColor: 'peachpuff',
+    fontSize: 20,
+    color: '#00155c',
   },
   addButton: {
     backgroundColor: '#e74c3c', // Utilisation de la couleur accent

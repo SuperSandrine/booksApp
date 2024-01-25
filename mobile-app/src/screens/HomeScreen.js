@@ -1,10 +1,11 @@
-import { View, Text, Button } from 'react-native'
+import { View, Text, Button, Image} from 'react-native'
 import React from 'react'
 import { commonStyles } from '../styles/styles';
 
 export function HomeScreen({navigation}) {
   return (
     <View style={commonStyles.containerButtons}>
+      <Image source={require('../../assets/imgbin_books.png')} style={{width: '100%', resizeMode: 'contain'}}/>
       <View style={commonStyles.containerButton}>
         <Button
           title="Go to List"

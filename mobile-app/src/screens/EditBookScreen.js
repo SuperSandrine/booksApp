@@ -4,6 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, Button, Alert } from 'react-native';
 import { apiService } from '../services/apiService.js';
+import { addBookStyles, commonStyles } from '../styles/styles.js';
 
 const EditBookScreen = ({ route, navigation }) => {
   console.log("Params", route.params);
@@ -48,24 +49,23 @@ const EditBookScreen = ({ route, navigation }) => {
   };
 
   return (
-    <View>
-      <Text>Edit Book</Text>
-      <TextInput
+    <View style={commonStyles.container}>
+      <TextInput style={addBookStyles.input}
         placeholder="Title"
         value={book.title}
         onChangeText={(text) => setBook({ ...book, title: text })}
       />
-      <TextInput
+      <TextInput style={addBookStyles.input}
         placeholder="Author"
         value={book.author}
         onChangeText={(text) => setBook({ ...book, author: text })}
       />
-      <TextInput
+      <TextInput style={addBookStyles.input}
         placeholder="Genre"
         value={book.genre}
         onChangeText={(text) => setBook({ ...book, genre: text })}
       />
-      <TextInput
+      <TextInput style={addBookStyles.input}
         placeholder="Publish Date"
         value={book.publishDate}
         onChangeText={(text) => setBook({ ...book, publishDate: text })}

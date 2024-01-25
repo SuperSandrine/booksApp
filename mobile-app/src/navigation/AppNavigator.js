@@ -48,7 +48,7 @@ export const AppNavigator = ({navigation}) =>{
           title:"Add a new book to the list",
           }}/>
           <Stack.Screen name="Edit-Book" component={EditBookScreen} options={{
-          title:"Edit a book",
+          title:"Edit book",
           }}/>
           <Stack.Screen name="Delete-Book" component={DeleteBookScreen} options={{
           title:"Suppress a book",

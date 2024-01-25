@@ -39,7 +39,6 @@ const DeleteBookScreen = ({ route, navigation }) => {
 
   return (
     <View>
-      <Text>Delete Book</Text>
       <Text>Êtes-vous sûr de vouloir supprimer le livre "{title}" ?</Text>
       <Button title="Supprimer" onPress={handleDeleteBook} />
     </View>
